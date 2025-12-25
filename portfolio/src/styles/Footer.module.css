@@ -1,0 +1,104 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    background-color: var(--d-white);
+
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                aspect-ratio: 1/1;
+                border-radius: 100px;
+                background-color: var(--primary);
+
+                img{
+                    height: 20px;
+                }
+            }
+
+            .logoTitle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 0 0 8px;
+
+                p{
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 0;
+
+                    &:last-child{
+                        font-size: 12px;
+                        font-weight: normal;
+                        margin: -4px 0 0 0;
+                    }
+                }
+            }
+        }
+
+        .sections{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100%;
+
+            p{
+                margin: 0 0 16px 0;
+                padding: 32px 0 0 0;
+            }
+
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+
+                li{
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+
+                    a{
+                        text-decoration: none;
+                        color: var(--l-black);
+
+                        &:hover{
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    hr{
+        width: 70%;
+        margin: 32px 0;
+        border-top: dashed 1px var(--l-black);
+    }
+
+    .footerTitle{
+        margin: 0 0 32px 0;
+        color: var(--l-black)
+    }
+}

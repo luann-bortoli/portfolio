@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 80vh;
+    width: 100%;
+
+    scroll-margin-top: 100px;
+
+    .titleContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+
+        .title{
+            font-size: 40px;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+        }
+
+        .desc{
+            margin: 0 0 32px 0;
+            color: var(--l-black)
+        }
+    }
+
+    .cardContainer{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px
+    }
+}

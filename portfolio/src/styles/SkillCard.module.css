@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+
+    background-color: var(--d-white);
+    padding: 20px;
+    border-radius: 12px;
+
+    img{
+        height: 24px;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    hr{
+        width: 100%;
+        background-color: var(--l-black);
+    }
+
+    p{
+        font-size: 14px;
+        margin: 0;
+    }
+}
